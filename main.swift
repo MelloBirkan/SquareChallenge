@@ -26,7 +26,19 @@ func square(size: Int) {
   topAndBottle(size: size)
 }
 
-square(size: 20)
+func square2(size: Int) {
+  for i in 0..<size {
+    for _ in 0..<size {
+    if (i == 0 || i == size - 1) {
+      print("* ", terminator: "")
+    } else {
+      print(" ", terminator: " ")
+    }
+  }
+  }
+  print(square)
+}
 
-
+// square(size: 20)
+square2(size: 5)
 
